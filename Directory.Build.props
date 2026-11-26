@@ -1,0 +1,12 @@
+<Project>
+
+  <!-- Gilt für alle Projekte im Repository. Jede Warnung bricht den Build ab;
+       Nullable-Warnungen bleiben auch dann Fehler, wenn ein Projekt
+       TreatWarningsAsErrors lokal abschaltet. -->
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+</Project>
