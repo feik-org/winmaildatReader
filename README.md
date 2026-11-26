@@ -27,6 +27,8 @@ dotnet build
 dotnet test
 ```
 
+Jede Warnung, insbesondere jede Nullable-Warnung (mögliche `NullReferenceException`), wird als Fehler gemeldet und bricht den Build ab. Die Einstellung gilt zentral für alle Projekte und steht in [`Directory.Build.props`](Directory.Build.props).
+
 ## Starten
 
 ```powershell
